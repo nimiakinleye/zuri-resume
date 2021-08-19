@@ -156,69 +156,6 @@ a:hover
             transition: .7s ease .3s;
 }
 
-.preloader .spinner
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    display: block;
-
-    width: 50px;
-    height: 50px;
-    margin-top: -25px;
-    margin-left: -25px;
-
-    -webkit-animation: spinner-pulse .6s infinite ease-in-out;
-            animation: spinner-pulse .6s infinite ease-in-out;
-    text-align: center;
-
-    opacity: 1;
-    border-radius: 100%;
-    background-color: #111;
-}
-
-.preloader.hide-preloader .spinner
-{
-    opacity: 0;
-    
-    -webkit-transition: .3s ease;
-         -o-transition: .3s ease;
-            transition: .3s ease;
-}
-
-@-webkit-keyframes spinner-pulse
-{
-    0%
-    {
-        -webkit-transform: scale(0);
-    }
-    100%
-    {
-        -webkit-transform: scale(1.0);
-
-        opacity: 0;
-    }
-}
-
-@keyframes spinner-pulse
-{
-    0%
-    {
-        -webkit-transform: scale(0);
-                transform: scale(0);
-    }
-    100%
-    {
-        -webkit-transform: scale(1.0);
-                transform: scale(1.0);
-
-        opacity: 0;
-    }
-}
-
-
-
 /** 3. Image Container
 *******************************************************************/
 
@@ -582,7 +519,7 @@ a:hover
 
     cursor: pointer;
 
-    border-radius: 3rem;
+    border-radius: 1rem;
     background: #111;
 }
 
@@ -801,7 +738,7 @@ a:hover
 
     color: #fff;
     border: none !important;
-    border-radius: 34px;
+    border-radius: 1rem;
     outline: none !important;
     background: rgb(177, 177, 177);
     -webkit-box-shadow: none !important;
@@ -890,10 +827,8 @@ a:hover
 
     width: 100%;
     height: 100%;
-
     content: '';
-
-    border-radius: 100px;
+    border-radius: 1rem;
     background: #111;
 }
 
